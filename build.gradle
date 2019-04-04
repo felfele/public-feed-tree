@@ -1,0 +1,116 @@
+group 'felfele'
+version '0.0.1'
+
+task wrapper(type: Wrapper) {
+    distributionUrl = "https://services.gradle.org/distributions/gradle-$gradleVersion-all.zip"
+}
+
+buildscript {
+    ext.kotlin_version = kotlin_version // Required for Kotlin
+    ext.spring_boot_version = spring_boot_version
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven {
+            url 'https://dl.bintray.com/kotlin/kotlin-dev/'
+        }
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+
+    }
+
+    dependencies {
+        classpath "org.junit.platform:junit-platform-gradle-plugin:$junit_platform_version"
+        classpath group: 'org.jetbrains.kotlin', name: 'kotlin-gradle-plugin', version: "$kotlin_version"
+        classpath 'com.google.gradle:osdetector-gradle-plugin:1.4.0'
+        classpath "org.jetbrains.kotlin:kotlin-allopen:$kotlin_version"
+
+    }
+}
+
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url 'https://dl.bintray.com/kotlin/kotlin-dev/' }
+    maven { url "https://dl.bintray.com/jetbrains/spek" }
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+    maven { url "https://jitpack.io/" }
+}
+
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+apply plugin: 'org.junit.platform.gradle.plugin'
+apply plugin: 'kotlin'
+
+
+dependencies {
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-stdlib-common:$kotlin_version"
+
+    compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: "$jackson_version"
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: "$jackson_version"
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: "$jackson_version"
+    compile group: 'com.fasterxml.jackson.module', name: 'jackson-module-kotlin', version: jackson_version
+
+    compile group: 'com.github.salomonbrys.kodein', name: 'kodein', version: '4.1.0'
+
+    implementation "com.github.jkcclemens:khttp:94ddc37"
+
+    compile group: 'rome', name: 'rome', version: '1.0'
+
+
+
+    testCompile group: 'org.jetbrains.kotlin', name: 'kotlin-test-junit', version: kotlin_version
+
+    testCompile group: 'org.mockito', name: 'mockito-inline', version: '2.18.0'
+    testCompile(group: 'com.nhaarman', name: 'mockito-kotlin-kt1.1', version: '1.5.0') {
+        exclude group: 'org.jetbrains.kotlin'
+    }
+    testCompile("org.jetbrains.spek:spek-api:$spek_version") {
+        exclude group: 'org.jetbrains.kotlin'
+    }
+    testCompile "org.junit.platform:junit-platform-console:$junit_platform_version"
+    testCompile "org.junit.platform:junit-platform-runner:$junit_platform_version"
+    testRuntime("org.jetbrains.spek:spek-junit-platform-engine:$spek_version") {
+        exclude group: 'org.junit.platform'
+        exclude group: 'org.jetbrains.kotlin'
+    }
+}
+
+
+configurations.all {
+    exclude group: 'org.slf4j', module: 'jul-to-slf4j'
+}
+
+junitPlatform {
+    platformVersion "$junit_platform_version"
+    filters {
+        engines {
+            include 'spek'
+            include 'junit-vintage'
+        }
+    }
+    enableStandardTestTask true
+}
+
+
+
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+

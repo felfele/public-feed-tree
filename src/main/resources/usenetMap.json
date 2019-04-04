@@ -1,0 +1,438 @@
+{
+  "activities": {
+    "dance": [],
+    "holidays": [],
+    "hobbies": [
+      "collecting",
+      "crafts",
+      "genealogy",
+      "magic",
+      "models",
+      "puzzles",
+      "scale models",
+      "toys"
+    ],
+    "outdoor activities": [
+      "fishing",
+      "gardening",
+      "outdoor activities",
+      "scouting",
+      "scuba diving",
+      "skating",
+      "surfing"
+    ],
+    "travel": [
+      "air travel",
+      "immigration",
+      "road travel",
+      "ship travel",
+      "travel",
+      "travel destinations"
+    ],
+    "vices": [
+      "gambling",
+      "smoking"
+    ]
+  },
+  "animals": {
+    "animals": [],
+    "aquariums": [],
+    "cats": [],
+    "dogs": [],
+    "horses": [],
+    "pets": [],
+    "reptiles": [],
+    "birds": [
+      "birds",
+      "parrots"
+    ]
+  },
+  "art and creation": {
+    "art": [],
+    "photography": [],
+    "literary/cultural genres": [
+      "cyberpunk",
+      "fan fiction",
+      "fandom",
+      "fictional characters",
+      "folklore",
+      "furry stuff",
+      "gothic",
+      "horror",
+      "interactive fiction",
+      "science fiction",
+      "shared reality"
+    ],
+    "music": [
+      "classical music",
+      "marching bands",
+      "midi music files",
+      "mp3 music files",
+      "music",
+      "music collecting",
+      "music performers",
+      "musical styles",
+      "playing music"
+    ],
+    "writing": [
+      "journalism",
+      "poetry",
+      "writers",
+      "writing"
+    ]
+  },
+  "computers": {
+    "computer organizations": [],
+    "computer security": [],
+    "computer standards": [],
+    "computers": [],
+    "computers and music": [],
+    "computing theory": [],
+    "professional certification": [],
+    "hardware": [
+      "computer architecture",
+      "computer cds",
+      "computer systems",
+      "ibm computer systems",
+      "macintosh",
+      "pc hardware",
+      "pc motherboards",
+      "pc peripherals",
+      "pcs"
+    ],
+    "networks": [
+      "network protocols",
+      "networks"
+    ],
+    "operating systems": [],
+    "dos": [
+      "linux",
+      "operating systems"
+    ],
+    "os/2": [
+      "unix",
+      "windowing systems",
+      "windows",
+      "windows 95/98/me/xp",
+      "windows networks",
+      "windows nt/2000",
+      "windows programming",
+      "windows software"
+    ],
+    "software": [
+      "computer aided design",
+      "computer graphics",
+      "databases",
+      "demos",
+      "emulators",
+      "hacking",
+      "multimedia",
+      "pirate cd images",
+      "pirate software",
+      "programming",
+      "programming languages",
+      "shareware",
+      "software",
+      "software archives"
+    ]
+  },
+  "entertainment": {
+    "amusements": [],
+    "comics": [],
+    "disney": [],
+    "pictures": [],
+    "sounds": [],
+    "star trek": [],
+    "star wars": [],
+    "theater": [],
+    "videos": [],
+    "animation": [
+      "animation",
+      "anime",
+      "cartoons"
+    ],
+    "famous people": [
+      "actors",
+      "celebrities"
+    ],
+    "humor": [
+      "comedy",
+      "humor"
+    ],
+    "movies": [
+      "cult movies",
+      "filmmakers",
+      "movies",
+      "specific movies"
+    ],
+    "radio": [
+      "amateur radio",
+      "radio",
+      "talk radio"
+    ],
+    "television": [],
+    "tv": [
+      "tv channels",
+      "tv personalities",
+      "tv shows"
+    ]
+  },
+  "games": {
+    "action games": [],
+    "adventure games": [],
+    "arcade games": [],
+    "board games": [],
+    "card games": [],
+    "game miniatures": [],
+    "games": [],
+    "interactive fiction games": [],
+    "laser games": [],
+    "role playing games": [],
+    "simulation games": [],
+    "sports games": [],
+    "strategy games": [],
+    "trading card games": [],
+    "video game emulators": [],
+    "video games": [],
+    "computer games": [
+      "computer game programming",
+      "computer games",
+      "specific computer games"
+    ]
+  },
+  "health": {
+    "diets": [],
+    "drugs": [],
+    "fitness": [],
+    "recovery": [],
+    "support groups": [],
+    "medicine": [
+      "alternative medicine",
+      "medical conditions",
+      "medical professionals",
+      "medicine"
+    ]
+  },
+  "humanities and social sciences": {
+    "history": [],
+    "languages": [],
+    "law": [],
+    "philosophy": [],
+    "psychology": [],
+    "social sciences": []
+  },
+  "information and learning": {
+    "education": [
+      "college",
+      "curriculum",
+      "education"
+    ],
+    "information": [
+      "books",
+      "clarinet news service",
+      "electronic publishing",
+      "information",
+      "libraries",
+      "magazines",
+      "news",
+      "weather"
+    ]
+  },
+  "internet": {
+    "bbs": [
+      "email",
+      "internet",
+      "internet access"
+    ],
+    "irc": [
+      "muds"
+    ],
+    "usenet": [
+      "flames",
+      "usenet",
+      "usenet administration",
+      "usenet announcements",
+      "usenet faqs",
+      "usenet software",
+      "usenet testing"
+    ],
+    "web": [
+      "browsers",
+      "web",
+      "web site creation",
+      "web site hosting"
+    ]
+  },
+  "money and business": {
+    "business": [],
+    "consumers": [],
+    "economics": [],
+    "industry": [],
+    "investing": [],
+    "money": [],
+    "building and housing": [
+      "architecture",
+      "building industry",
+      "home maintenance",
+      "housing",
+      "real estate"
+    ],
+    "buy/sell": [
+      "buy/sell",
+      "buy/sell computers"
+    ],
+    "working": [
+      "jobs",
+      "jobs by location",
+      "jobs by occupation",
+      "professions"
+    ]
+  },
+  "people and society": {
+    "countries": [
+      "united states",
+      "world cultures"
+    ],
+    "family": [
+      "adoption",
+      "children",
+      "parenting",
+      "teenagers"
+    ],
+    "groups": [
+      "gay",
+      "jews",
+      "organizations"
+    ],
+    "people": [
+      "penpals",
+      "people",
+      "usenet chat groups"
+    ],
+    "politics": [
+      "activism",
+      "guns",
+      "hate",
+      "military",
+      "politics",
+      "u.s. politics",
+      "war"
+    ],
+    "relationships": [
+      "personal ads",
+      "relationships",
+      "romance"
+    ],
+    "religion": [
+      "christianity",
+      "evangelists",
+      "religion",
+      "spirituality"
+    ],
+    "sex": [
+      "bondage",
+      "erotic pictures",
+      "erotica",
+      "porn actors",
+      "sex",
+      "sex resources",
+      "sex stories",
+      "sexual fetishes",
+      "sexual practices"
+    ]
+  },
+  "popular culture": {
+    "clothing": [],
+    "life": [],
+    "mischief": [],
+    "crime and security": [
+      "crime",
+      "murderers",
+      "security"
+    ],
+    "food and drink": [
+      "cooking",
+      "drink",
+      "food",
+      "restaurants"
+    ],
+    "fringe": [
+      "astrology",
+      "conspiracies",
+      "magick",
+      "paranormal",
+      "tasteless",
+      "ufos and aliens"
+    ]
+  },
+  "science": {
+    "agriculture": [],
+    "astronomy": [],
+    "chemistry": [],
+    "geology": [],
+    "mathematics": [],
+    "physics": [],
+    "science": [],
+    "space": [],
+    "biology": [
+      "biology",
+      "biology journals",
+      "biology organizations",
+      "biology software",
+      "botany",
+      "cell biology",
+      "entomology",
+      "genetics",
+      "microbiology",
+      "molecular biology"
+    ],
+    "environment": [
+      "disasters",
+      "environment"
+    ]
+  },
+  "sports": {
+    "auto racing": [],
+    "baseball": [],
+    "basketball": [],
+    "college sports": [],
+    "cricket": [],
+    "football": [],
+    "hockey": [],
+    "martial arts": [],
+    "professional wrestling": [],
+    "soccer": [],
+    "sports": [],
+    "table tennis": [],
+    "tennis": [],
+    "skiing": [
+      "ski resorts",
+      "skiing"
+    ]
+  },
+  "technology": {
+    "artificial intelligence": [],
+    "audio": [],
+    "cell phones": [],
+    "cryptography": [],
+    "data communications": [],
+    "dvds": [],
+    "electronics": [],
+    "energy": [],
+    "engineering": [],
+    "satellite tv": [],
+    "video": []
+  },
+  "transportation": {
+    "aviation": [],
+    "bicycles": [],
+    "boats": [],
+    "motorcycles": [],
+    "railroads": [],
+    "transportation": [],
+    "cars": [
+      "car models",
+      "cars"
+    ]
+  }
+}
