@@ -4,7 +4,7 @@
 
 ### Usenet
 
-We use usenet.txt to generate initial categories. The output is _tumblrssUsenetMap.json_. Later it's copied to resources (atm also renamed to _usenetMap.json_)
+We use usenet.txt to generate initial categories. The output is _tumblrssUsenetMap.json_. Later it's copied to resources (atm also renamed to _usenetMap.json_) This is where we can modify the categories.
 
 ### ContentScraperSimple
 
