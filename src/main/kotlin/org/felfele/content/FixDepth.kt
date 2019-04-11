@@ -11,15 +11,22 @@ class Blog(
 )
 
 object UsenetFixDepth {
+    val json = ObjectMapper()
+    val prettyJson = json.writerWithDefaultPrettyPrinter()
+
     @JvmStatic
     fun main(args: Array<String>) {
-        val json = ObjectMapper()
-            val prettyJson = json.writerWithDefaultPrettyPrinter()
-        val inputTree = (ContentScraper.json.readValue(ClassLoader.getSystemResourceAsStream("usenetTumblrTree.json"),Map::class.java) as Map<String,Any>)
+        val inputTree = (json.readValue(ClassLoader.getSystemResourceAsStream("usenetTumblrTree.json"),Map::class.java) as Map<String,Any>)
 
 
 
-        val outputTree = inputTree.map{sc->
+       val outputTree = convertToFixedDepth(inputTree)
+
+        prettyJson.writeValue(File("threeLevelTree.json"), outputTree)
+    }
+
+     fun convertToFixedDepth(inputTree: Map<String, Any>): Map<String, Map<String, List<Blog>>> {
+        return  inputTree.map{sc->
             sc.key to if (sc.value is Map<*,*>){
                 (sc.value as Map<String, Map<String,Any>>).map{ bl->
                     bl.key to if (bl.value is List<*>){
@@ -42,8 +49,6 @@ object UsenetFixDepth {
                 null
             }
 
-        }.toMap().filterValues { it != null && it.isNotEmpty() }
-
-        prettyJson.writeValue(File("threeLevelTree.json"), outputTree)
+        }.toMap().filterValues { it != null && it.isNotEmpty() } as Map<String, Map<String, List<Blog>>>
     }
 }
