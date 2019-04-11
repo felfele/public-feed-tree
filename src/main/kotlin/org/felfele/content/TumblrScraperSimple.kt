@@ -23,7 +23,7 @@ object TumblrScraperSimple {
 
         val usenet = (json.readValue(File("usenetMap.json"), Map::class.java) as Map<String, Any>)
         val usenetTumblr = addTumblr(usenet)
-        json.writeValue(File("/Users/gmora/felfele/usenetTumblrTree.json"), usenetTumblr)
+        json.writeValue(File("usenetTumblrTree.json"), usenetTumblr)
 
 
     }
