@@ -1,8 +1,9 @@
 group 'felfele'
 version '0.0.1'
 
-task wrapper(type: Wrapper) {
-    distributionUrl = "https://services.gradle.org/distributions/gradle-$gradleVersion-all.zip"
+wrapper {
+    gradleVersion = gradleVersion
+    distributionUrl = distributionUrl.replace("bin", "all")
 }
 
 buildscript {
@@ -25,6 +26,7 @@ buildscript {
         classpath group: 'org.jetbrains.kotlin', name: 'kotlin-gradle-plugin', version: "$kotlin_version"
         classpath 'com.google.gradle:osdetector-gradle-plugin:1.4.0'
         classpath "org.jetbrains.kotlin:kotlin-allopen:$kotlin_version"
+        classpath 'com.github.jengelman.gradle.plugins:shadow:5.0.0'
 
     }
 }
@@ -40,6 +42,7 @@ repositories {
     maven { url "https://jitpack.io/" }
 }
 
+apply plugin: 'com.github.johnrengelman.shadow'
 apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'maven-publish'
@@ -100,9 +103,6 @@ junitPlatform {
     }
     enableStandardTestTask true
 }
-
-
-
 
 publishing {
     publications {
